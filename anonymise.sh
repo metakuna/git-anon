@@ -19,7 +19,7 @@ done
 rm -rf .git/refs/original/
 
 # Delete remotes, which might point to the old commits
-for r in `git remote`; do git remote rm $r; done
+# for r in `git remote`; do git remote rm $r; done
 
 # Your old commits will now no longer show up in GitK, `git log` or `git
 # reflog`, but can still be found using `git show $commit-id`.
